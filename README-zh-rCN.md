@@ -1,4 +1,4 @@
-[English](README.md) | [简体中文](README-zh-rCN.md)
+[English](README.md) | 简体中文
 
 # search_highlight.nvim
 
@@ -47,26 +47,6 @@
 ### 单个关键词
 
 搜索单个关键词时不启用彩色高亮，保持 Neovim 原生 `hlsearch` 行为。
-
-## 配置
-
-`setup()` 接受可选的 `colors` 参数，覆盖默认色板（7 色循环）：
-
-```lua
-require('search_highlight').setup({
-  colors = {
-    { fg = "#1a1c2a", bg = "#ea7183" }, -- 红
-    { fg = "#1a1c2a", bg = "#96d382" }, -- 绿
-    { fg = "#1a1c2a", bg = "#739df2" }, -- 蓝
-    { fg = "#1a1c2a", bg = "#eaca89" }, -- 黄
-    { fg = "#1a1c2a", bg = "#b889f4" }, -- 紫
-    { fg = "#1a1c2a", bg = "#78cec1" }, -- 青
-    { fg = "#1a1c2a", bg = "#f39967" }, -- 橙
-  },
-})
-```
-
-默认色板为 catppuccin mocha 风格，适合深色主题。只传部分颜色也可以，插件会自动循环使用。
 
 ## 原理
 

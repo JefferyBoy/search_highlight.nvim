@@ -1,4 +1,4 @@
-[English](README.md) | [简体中文](README-zh-rCN.md)
+English | [简体中文](README-zh-rCN.md)
 
 # search_highlight.nvim
 
@@ -47,26 +47,6 @@ No extra setup needed, works right after installation:
 ### Single keyword
 
 When searching a single keyword, colored highlighting is not enabled, preserving Neovim's native `hlsearch` behavior.
-
-## Configuration
-
-`setup()` accepts an optional `colors` parameter to override the default palette (7-color cycle):
-
-```lua
-require('search_highlight').setup({
-  colors = {
-    { fg = "#1a1c2a", bg = "#ea7183" }, -- red
-    { fg = "#1a1c2a", bg = "#96d382" }, -- green
-    { fg = "#1a1c2a", bg = "#739df2" }, -- blue
-    { fg = "#1a1c2a", bg = "#eaca89" }, -- yellow
-    { fg = "#1a1c2a", bg = "#b889f4" }, -- purple
-    { fg = "#1a1c2a", bg = "#78cec1" }, -- cyan
-    { fg = "#1a1c2a", bg = "#f39967" }, -- orange
-  },
-})
-```
-
-The default palette follows the catppuccin mocha style, suitable for dark themes. You can also pass only part of the colors — the plugin cycles through them automatically.
 
 ## How it works
 
